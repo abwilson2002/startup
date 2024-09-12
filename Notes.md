@@ -5,3 +5,5 @@ Ideas for my startup:
  - Frogger
  - Recipe Book (prices, time)
  - Monopoly
+
+Server Elastic IP address: 34.235.37.3
