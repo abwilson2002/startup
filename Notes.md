@@ -14,3 +14,4 @@ Port 443 is the only way to get secure https traffic.
 Caddy is the gateway, it routes traffic to the ports I want it to.
 Port 80 is http access.
 
+Website url: bookmarkedtheories.click
