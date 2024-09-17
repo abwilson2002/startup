@@ -18,6 +18,8 @@ Website url: bookmarkedtheories.click
 
 New Classroom: KMBL 230!!!!!!!!
 
-git commit -am "Explanation"
-^ is the command to commit, do between editing and git push
+git commit -am "Explanation"\n
+^ is the command to commit, do between editing and git push\n
 Remember to git pull even when you just pushed and no one else is editing.
+
+https://codepen.io/abwilson2002/pen/jOjjzYz -> url for my HTML structure pen.
