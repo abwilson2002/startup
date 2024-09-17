@@ -17,3 +17,7 @@ Port 80 is http access.
 Website url: bookmarkedtheories.click
 
 New Classroom: KMBL 230!!!!!!!!
+
+git commit -am "Explanation"
+^ is the command to commit, do between editing and git push
+Remember to git pull even when you just pushed and no one else is editing.
