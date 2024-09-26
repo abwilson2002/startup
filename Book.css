@@ -1,7 +1,61 @@
-main {
-    background: lightgrey;
+header {
+    background: lightblue;
+    padding: 1.5em;
+    flex: 0 80px;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    text-align: center;
+    flex: 1;
     background: lightgrey;
+    display: flex;
+    flex-direction: row;
+}
+img {
+    flex: 0 100px;
+}
+table {
+    flex: 1;
+    border: thin black solid;
+    font-size: 50;
+    font-family: sans-serif;
+}
+td {
+    border: thin grey solid;
+}
+#selfReport {
+    text-align: left;
+}
+#otherReport {
+    text-align: right;
+}
+#userInput {
+    flex: 0 30px;
+    background: lightyellow;
+    text-align: right;
+    font-size: 50;
+    font-family: sans-serif;
+}
+.buttonInput {
+    height: 100px;
+    width: 95%;
+}
+
+footer {
+    background: lightsalmon;
+    flex: 0 30px;
+    text-align: center;
+}
+
+@media (orientation: portrait) {
+    main {
+        flex-direction: column;
+    }
 }

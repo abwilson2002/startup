@@ -1,33 +1,39 @@
-<head>
-    <header>
-        <link rel="stylesheet" href="Book.css">
-        <p><head>Bookmarked Theories</head></p>
-        <nav>Navigation
-            <div id="hyperlinks"><a href="Main.html">Main</a></div>
-            <div id="hyperlinks"><a href="index.html">Login</a></div>
-            <div id="hyperlinks"><a href="About.html">About</a></div>
-        </nav>
-    </header>
-</head>
 <body>
-    <img src="book_image.jpg" alt="Book image" height="400" width="300">
-    <table>
-        <tr>
-            <th>Chat</th>
-        </tr>
-        <tr>
-            <td id="selfReport">Example message from user</td>
-        </tr>
-        <tr id="otherReport">
-            <td>Example reply message from other users</td>
-        </tr>
-    </table>
-    <div>
-        <input type="text" placeholder="Type your response here">
-        <button type="Submit">Chat</button>
-    </div>
+    <head>
+        <header>
+            <link rel="stylesheet" href="Book.css">
+            <div><head>Bookmarked Theories</head></div>
+            <nav>Navigation
+                <div id="hyperlinks"><a href="Main.html">Main</a></div>
+                <div id="hyperlinks"><a href="index.html">Login</a></div>
+                <div id="hyperlinks"><a href="About.html">About</a></div>
+            </nav>
+        </header>
+    </head>
+        <section>
+            <main>
+                <img src="book_image.jpg" alt="Book image" height="400" width="300">
+                <table>
+                    <tr>
+                        <th>Chat</th>
+                    </tr>
+                    <tr>
+                        <td class="messages"id="selfReport">Example message from user</td>
+                    </tr>
+                    <tr>
+                        <p><td class="messages" id="otherReport">Example reply message from other users</td></p>
+                    </tr>
+                </table>
+            </main>
+        </section>
+        <section id="userInput">
+            <div>
+                <input class="buttonInput" type="text" placeholder="Type your response here">
+                <button style="height:100px; width:50px; text-align:right;" type="Submit">Chat</button>
+            </div>
+        </section>
+    <footer>
+        <p>Owner's Github</p>
+        <a href="https://github.com/abwilson2002/startup">Austin Wilson's Startup</a>
+    </footer>
 </body>
-<footer>
-    <p>Owner's Github</p>
-    <a href="https://github.com/abwilson2002/startup">Austin Wilson's Startup</a>
-</footer>
