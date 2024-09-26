@@ -32,9 +32,9 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
 
  ---------------------------------------------------------------------------------------------------------------
  # HTML Deliverable
-- *HTML Pages*: Added a page for Index, Main, Books, and About.
-- *Links*: Each page has About, Main, and Index (login) hyperlinked. Books is hyperlinked in Main.
+- *HTML Pages*: Added a page for Index, Main, Book, and About.
+- *Links*: Each page has About, Main, and Index (login) hyperlinked. Book is hyperlinked in Main.
 - *Text*: About is filled with text; the username display currently has a text standin on the Main page.
-- *Images*: Images were added to the Books and About page. I was unable to get the .ico file to work.
+- *Images*: Images were added to the Book and About page. I was unable to get the .ico file to work.
 - *DB/Login*: Added standin html for login and username, username and password boxes require at least a character to tranfer user to Main.
-- *Websocket*: Standin chat was added to Books html in place of future WebSocket chat function.
+- *Websocket*: Standin chat was added to Book html in place of future WebSocket chat function.
