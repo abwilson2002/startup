@@ -32,9 +32,9 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
 
  ---------------------------------------------------------------------------------------------------------------
  # HTML Deliverable
-- *HTML*: Added the HTML for the index, main, book, and about pages. Created placeholder login section on the index page, and added hyperlinks to all pages in the nav section. 
-- *CSS*: Created the files corresponding to each html page but I have not worked in them yet.
-- *React*: Created html standin for login, available books, and standin for chats from user and others (I am still unsure on the capabilities of React to accurately say what will be React and what will not).
-- *Service*: Created html standins for each of the service endpoints.
-- *DB/Login*: html standins created for login and username.
-- *Websocket*: html standins created for replies and comments from users.
+- *HTML Pages*: Added a page for Index, Main, Books, and About.
+- *Links*: Each page has About, Main, and Index (login) hyperlinked. Books is hyperlinked in Main.
+- *Text*: About is filled with text; the username display currently has a text standin on the Main page.
+- *Images*: Images were added to the Books and About page. I was unable to get the .ico file to work.
+- *DB/Login*: Added standin html for login and username, username and password boxes require at least a character to tranfer user to Main.
+- *Websocket*: Standin chat was added to Books html in place of future WebSocket chat function.
