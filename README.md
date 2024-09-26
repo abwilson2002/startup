@@ -29,3 +29,12 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
         > Submitting books/shows  
  - *DB/Login*: Stores logins, comments, where in the book/show, registers new users, limits user options until logged in.
  - *WebSocket*: Sends user's replies and comments to other users in the same chat.
+
+ ---------------------------------------------------------------------------------------------------------------
+ # HTML Deliverable
+- *HTML*: Added the HTML for the index, main, book, and about pages. Created placeholder login section on the index page, and added hyperlinks to all pages in the nav section. 
+- *CSS*: Created the files corresponding to each html page but I have not worked in them yet.
+- *React*: Created html standin for login, available books, and standin for chats from user and others (I am still unsure on the capabilities of React to accurately say what will be React and what will not).
+- *Service*: Created html standins for each of the service endpoints.
+- *DB/Login*: html standins created for login and username.
+- *Websocket*: html standins created for replies and comments from users.
