@@ -1,4 +1,4 @@
-header {
+head {
     background: lightblue;
     padding: 1.5em;
     flex: 0 80px;
@@ -20,10 +20,11 @@ main {
     flex-direction: row;
 }
 img {
-    flex: 0 100px;
+    flex: 1;
+    height: min-content;
 }
 table {
-    flex: 1;
+    flex: 14;
     border: thin black solid;
     font-size: 50;
     font-family: sans-serif;
@@ -37,29 +38,27 @@ td {
 #otherReport {
     text-align: right;
 }
+
 #userInput {
     padding: 0;
-    border-width: 0;
+    border: 0;
     flex: 1;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: nowrap;
     background: #717101;
-    text-align: center;
-    font-size: 35;
     margin: 0;
     font-family: sans-serif;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
 }
 .buttonInput {
-    flex-grow: 19;
+    flex: 17;
     height: 100%;
+    width: 100%;
 }
 .buttonChat {
-    flex-grow: 1;
+    flex: 1;
     height: 100%;
+    width: 100%;
 }
 
 footer {
