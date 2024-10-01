@@ -1,0 +1,12 @@
+body {
+    background-color: lightcoral;
+    text-align: center;
+}
+
+header {
+    text-align: left;
+}
+
+footer {
+    border-top: thin black solid;
+}
