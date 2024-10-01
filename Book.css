@@ -43,22 +43,29 @@ td {
     padding: 0;
     border: 0;
     flex: 1;
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     background: #717101;
     margin: 0;
     font-family: sans-serif;
+    display: flex;
+    height: 100%;
+    width: 100%;
 }
 .buttonInput {
-    flex: 17;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+    flex-grow: 17;
     height: 100%;
-    width: 100%;
+    box-sizing: border-box;
 }
 .buttonChat {
-    flex: 1;
+    padding: 0;
+    margin: 0;
+    justify-content: right;
+    flex-grow: 1;
     height: 100%;
-    width: 100%;
 }
 
 footer {
