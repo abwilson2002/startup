@@ -30,11 +30,11 @@ table {
     font-family: sans-serif;
     min-height: 100%;
     overflow-y: auto;
-    padding: 1.5em;
 }
 td {
     border: thin grey solid;
     height: min-content;
+    
 }
 #selfReport {
     text-align: left;
