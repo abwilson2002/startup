@@ -38,3 +38,12 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
 - *Images*: Images were added to the Book and About page. I was unable to get the .ico file to work.
 - *DB/Login*: Added standin html for login and username, username and password boxes require at least a character to tranfer user to Main.
 - *Websocket*: Standin chat was added to Book html in place of future WebSocket chat function.
+
+----------------------------------------------------------------------------------------------------------------
+# CSS Deliverable
+- *Header/Footer/Main*: Styled the pages to desired colors and setup.
+- *Navigation*: I kept the HTML navigation because I like the look.
+- *Portrait/Landscape Mode*: The only page that required switching between was the Book pages and the chats look good in both sides.
+- *Application elements*: I filled the area and used a lightcoral background color for all pages.
+- *Application text*: Consistent fonts were used on all pages.
+- *Application images*: The book image on Book.html was stylized to center if the application was put in portrait mode, the whitespace around it in portait mode is intended.
