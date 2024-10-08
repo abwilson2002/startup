@@ -21,7 +21,10 @@ main {
 }
 img {
     flex: 1;
-    height: min-content;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    text-align: center;
 }
 table {
     flex: 14;
@@ -30,6 +33,8 @@ table {
     font-family: sans-serif;
     min-height: 100%;
     overflow-y: auto;
+    padding: 0;
+    margin: 0;
 }
 td {
     border: thin grey solid;
@@ -82,5 +87,9 @@ footer {
 @media (orientation: portrait) {
     main {
         flex-direction: column;
+    }
+    img {
+        text-align: center;
+        padding-left: 25%;
     }
 }
