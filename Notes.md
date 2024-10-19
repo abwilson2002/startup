@@ -47,3 +47,5 @@ paragraph p
 ordered lists ol
 unordered list ul
 level heading h(whatever level is the number)
+
+Async/await: try/catch is similar to python try/except. Finally is used for whatever comes after finishing.
