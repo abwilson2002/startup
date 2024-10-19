@@ -49,3 +49,5 @@ unordered list ul
 level heading h(whatever level is the number)
 
 Async/await: try/catch is similar to python try/except. Finally is used for whatever comes after finishing.
+
+Use cat to go into any non-file subdirectory (similar to cd)
