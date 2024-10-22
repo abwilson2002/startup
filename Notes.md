@@ -51,3 +51,15 @@ level heading h(whatever level is the number)
 Async/await: try/catch is similar to python try/except. Finally is used for whatever comes after finishing.
 
 Use cat to go into any non-file subdirectory (similar to cd)
+
+.createElement('html tag', null, "text", valueInText)
+
+ReactDOM.render used to replace items in DOM (ex. ReactDOM.render(<p>Hello World</p>, document.querySelector("location in DOM")) replaces things in the location in DOM with Hello World)
+
+React builds a copy of DOM, and edits the copy, then copies the changes to the original DOM.
+
+From ex. in line 57:            (ReactDOM.render(tag+text, querySelector("location")))
+    - ReactDOM is from a file that needs to be installed into the file
+    - render tells React to update the original DOM with the copy (see previous note)
+    - querySelector selects items of that location as the target location
+    - tag+text is what you are replacing in.

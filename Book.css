@@ -31,7 +31,7 @@ table {
     border: thin black solid;
     font-size: 50;
     font-family: sans-serif;
-    min-height: 100%;
+    height: 100%;
     overflow-y: auto;
     padding: 0;
     margin: 0;
