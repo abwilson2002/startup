@@ -52,14 +52,30 @@ Async/await: try/catch is similar to python try/except. Finally is used for what
 
 Use cat to go into any non-file subdirectory (similar to cd)
 
+Javascript function format: const functionName = (parameters) => {function code, has a return}
+
 .createElement('html tag', null, "text", valueInText)
 
 ReactDOM.render used to replace items in DOM (ex. ReactDOM.render(<p>Hello World</p>, document.querySelector("location in DOM")) replaces things in the location in DOM with Hello World)
 
 React builds a copy of DOM, and edits the copy, then copies the changes to the original DOM.
 
-From ex. in line 57:            (ReactDOM.render(tag+text, querySelector("location")))
-    - ReactDOM is from a file that needs to be installed into the file
+From ex. in line 59:            (ReactDOM.render(tag+text, querySelector("location")))
+    - ReactDOM is from a file that needs to be imported into the file   (also import React and ReactDOM)
+        import React from "https://cdn.skypack.dev/react"
+        import ReactDOM from "https://cdn.skypack.dev/react-dom"
     - render tells React to update the original DOM with the copy (see previous note)
     - querySelector selects items of that location as the target location
     - tag+text is what you are replacing in.
+
+from previous note: tag+text can look like this (<Hello />)
+with connected variable
+    const Hello = () => {return <p>Hello world</p>}
+    - include trigger in parenthesis to have the returned <p> have a variable (requires {} in both function trigger and when called inside function. Means it can be evaluated)
+
+
+Use previous note to code heading and footer for each page
+
+Destructuring (Javascript): When you pull one or more (but not all) parts of an object out of that object. Requires knowing the name to get the proper key (think C++ maps).
+
+Javascript changeColor() {setColor (color === "red" ? "green" : "red");} if it is red, turn green, otherwise turn red.
