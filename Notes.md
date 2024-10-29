@@ -82,3 +82,5 @@ Javascript changeColor() {setColor (color === "red" ? "green" : "red");} if it i
 
 vi is a good console command to see files
 
+use ../ to go up to the parent file in html
+
