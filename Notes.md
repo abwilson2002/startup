@@ -79,3 +79,6 @@ Use previous note to code heading and footer for each page
 Destructuring (Javascript): When you pull one or more (but not all) parts of an object out of that object. Requires knowing the name to get the proper key (think C++ maps).
 
 Javascript changeColor() {setColor (color === "red" ? "green" : "red");} if it is red, turn green, otherwise turn red.
+
+vi is a good console command to see files
+
