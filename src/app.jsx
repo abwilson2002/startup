@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
-import { Login } from './index/index';
-import { Book } from './Book/Book';
-import { Main } from './Main/Main';
-import { About } from './About/About';
-import { AuthState } from './login/authState';
+import { Login } from './index/login';
+import { Book } from './Book/Book.html';
+import { Main } from './Main/Main,html';
+import { About } from './About/About.html';
+import { AuthState } from './index/authState';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className='body bg-lightcoral text-light'>
+      <div className='body bg-light text-light'>
         <header className='container-fluid'>
           <nav className='navbar fixed-top navbar-dark'>
             <div className='navbar-brand'>
@@ -65,7 +65,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
 
-        <footer className='bg-lightcoral text-dark text-muted'>
+        <footer className='bg-light text-dark text-muted'>
           <div className='container-fluid'>
             <span className='text-reset'>Owner's Name</span>
             <a className='text-reset' href='https://github.com/abwilson2002/startup'>
