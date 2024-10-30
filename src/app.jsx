@@ -1,4 +1,4 @@
-/*import React from 'react';
+import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './index/login';
 import { Book } from './Book/Book';
@@ -23,19 +23,19 @@ function App() {
             </div>
             <menu className='navbar-nav'>
               <li className='nav-item'>
-                <NavLink className='nav-link' to=''>
+                <NavLink className='nav-link' to='index.html'>
                   Login
                 </NavLink>
               </li>
               {authState === AuthState.Authenticated && (
                 <li className='nav-item'>
-                  <NavLink className='nav-link' to='Main'>
+                  <NavLink className='nav-link' to='Main.html'>
                     Main
                   </NavLink>
                 </li>
               )}
               <li className='nav-item'>
-                <NavLink className='nav-link' to='About'>
+                <NavLink className='nav-link' to='About.html'>
                   About
                 </NavLink>
               </li>
@@ -83,12 +83,3 @@ function NotFound() {
 }
 
 export default App;
-*/
-
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './app.css';
-
-export default function App() {
-  return <div className='body bg-dark text-light'>App will display here</div>;
-}
