@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './index/login';
-import { Book } from './Book/Book.html';
-import { Main } from './Main/Main.html';
-import { About } from './About/About.html';
+import { Book } from './Book/Book';
+import { Main } from './Main/Main';
+import { About } from './About/About';
 import { AuthState } from './index/authState';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
