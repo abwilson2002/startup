@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import {userName} from '././index/login.jsx'
+//import {userName} from './index.jsx'
 import './Main.css';
 
 export function Main(props) {
@@ -14,7 +14,7 @@ export function Main(props) {
 
   return (
     <main>
-        <h6>{userName}</h6>
+        <h6>Username</h6>
         <table>
             <tr>
                 <th>Book Picture</th>

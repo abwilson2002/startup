@@ -1,5 +1,4 @@
 .body {
-    background-color: lightcoral;
     display: flex;
     flex-direction: column;
     min-width: 375px;
