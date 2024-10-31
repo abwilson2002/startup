@@ -41,8 +41,8 @@ export function Book() {
     return (
       <main className='container-fluid bg-secondary text-center'>
         <section>
-            <img src="/book_image.jpg" alt="Book image" height="400" width="300"/>
-            <table className='container-fluid'>
+            <img src="/book_image.jpg" className="fixed-left" alt="Book image" height="400" width="300"/>
+            <table className='container-fluid fixed-right'>
                 <tr>
                     <th>Chat</th>
                 </tr>

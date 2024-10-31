@@ -8,6 +8,7 @@ import { About } from './About/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 /*
+
 export default function App() {
   const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
   const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
