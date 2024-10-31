@@ -43,11 +43,11 @@
   }
   
   @media (max-height: 600px) {
-    header {
+    /*header {
       display: none;
     }
     footer {
       display: none;
-    }
+    }*/
   }
   

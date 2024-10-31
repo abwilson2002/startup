@@ -1,5 +1,5 @@
 import React from 'react';
-
+/*
 import { Unauthenticated } from './unauthenticated';
 import { Authenticated } from './authenticated';
 import { AuthState } from './authState';
@@ -21,6 +21,14 @@ export function Login({ userName, authState, onAuthChange }) {
           />
         )}
       </div>
+    </main>
+  );
+}*/
+
+export function Login() {
+  return (
+    <main className='container-fluid bg-secondary text-center'>
+      <div>login here</div>
     </main>
   );
 }
