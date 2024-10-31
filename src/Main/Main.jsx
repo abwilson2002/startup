@@ -27,7 +27,7 @@ export function Main() {
             </tr>
             <tr id="booklist">
                 <td><img src="/book_image.jpg" alt="Example Book" height="100" width="100"/></td>
-                <td><a href="Book">Example Book Title 2</a></td>
+                <td><a href="Book2">Example Book Title 2</a></td>
                 <td>15</td>
                 <td><li><input type="checkbox" id="checkbox2" name="varCheckbox" value="checkbox2"/></li></td>
             </tr>
