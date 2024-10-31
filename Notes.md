@@ -84,3 +84,7 @@ vi is a good console command to see files
 
 use ../ to go up to the parent file in html
 
+fetch(website)
+    .then(r => r.text())
+    .then(text => console.log(text.value))
+
