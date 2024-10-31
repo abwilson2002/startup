@@ -1,9 +1,9 @@
 import React from 'react';
-//import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
-//import { Login } from './index/login';
-//import { Book } from './Book/Book';
-//import { Main } from './Main/Main';
-//import { About } from './About/About';
+import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
+import { Login } from './index/login';
+import { Book } from './Book/Book';
+import { Main } from './Main/Main';
+import { About } from './About/About';
 //import { AuthState } from './index/authState';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
@@ -58,21 +58,6 @@ export default function App() {
             }
             exact
           />
-          <Route path='/' element={<Login />} exact />
-          <Route path='/Main' element={<Main userName={userName} />} />
-          <Route path='/Book' element={<Book userName={userName}/>} />
-          <Route path='/About' element={<About />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-
-        <footer className='bg-dark text-dark text-muted'>
-          <div className='container-fluid'>
-            <span className='text-reset'>Owner's Name</span>
-            <a className='text-reset' href='https://github.com/abwilson2002/startup'>
-              Source
-            </a>
-          </div>
-        </footer>
       </div>
     </BrowserRouter>
   );
@@ -84,25 +69,45 @@ function NotFound() {
 
 export default function App() {
   return (
-    <div className="body bg-dark text-light">
-      <header className="container-fluid">
-        <nav className="navbar fixed-top">
-          <div className="navbar-brand">Bookmarked Theories</div>
-          <menu className="navbar-nav">
-            <li className='nav-item'><a className="nav-link" href="index.html">Login</a></li>
-            <li className='nav-item'><a className="nav-link" href="About.html">About</a></li>
-          </menu>
-        </nav>
-      </header>
-  
-      <main>App components go here</main>
-  
-      <footer className="bg-dark text-white-50">
-        <div className="container-fluid">
-          <span className="text-reset">Owner's Github</span>
-          <a className='text-reset' href="https://github.com/abwilson2002/startup">Austin Wilson's Startup</a>
-        </div>
-      </footer>
-    </div>
+    <BrowserRouter>
+      <div className="body bg-dark text-light">
+        <header className="container-fluid">
+          <nav className="navbar fixed-top navbar-dark">
+            <div className="navbar-brand">Bookmarked Theories</div>
+            <menu className="navbar-nav">
+              <li className='nav-item'>
+                <NavLink className="nav-link" to="">
+                  Login
+                </NavLink>
+              </li>
+              <li className='nav-item'>
+                <NavLink className="nav-link" to="About">
+                  About
+                </NavLink>
+              </li>
+            </menu>
+          </nav>
+        </header>
+    
+        <Routes>
+          <Route path="/" element={<Login />} exact />
+          <Route path="/Main" element={<Main />} />
+          <Route path="/Book" element={<Book />} />
+          <Route path="/About" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+    
+        <footer className="bg-dark text-white-50">
+          <div className="container-fluid">
+            <span className="text-reset">Owner's Github</span>
+            <a className='text-reset' href="https://github.com/abwilson2002/startup">Austin Wilson's Startup</a>
+          </div>
+        </footer>
+      </div>
+    </BrowserRouter>
   );
+}
+
+function NotFound() {
+  return <main className="container-fluid bg-secondary text-center">404: Page Not Found</main>;
 }
