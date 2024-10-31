@@ -1,6 +1,6 @@
 import React from "react"
+/*
 import "./About.css"
-
 export function About(props) {
     const [imageUrl, setImageUrl] = React.useState('././public/Bookmarked_Theories_Logo.png.jpg');
 
@@ -19,5 +19,13 @@ export function About(props) {
             <h2>That's all there is!</h2>
             <p>Now go enjoy discussion your favorite books without concern for spoilers!</p>
         </main>
+    );
+}*/
+
+export function About() {
+    return (
+      <main className='container-fluid bg-secondary text-center'>
+        <div>This page has the about</div>
+      </main>
     );
 }

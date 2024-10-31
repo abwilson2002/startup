@@ -1,6 +1,6 @@
 import React from "react"
+/*
 import "./Book.css";
-
 export function About(props) {
     const [imageUrl, setImageUrl] = React.useState('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=')
 
@@ -34,4 +34,12 @@ export function About(props) {
             </section>
         </main>
     );
-}
+}*/
+
+export function Book() {
+    return (
+      <main className='container-fluid bg-secondary text-center'>
+        <div>Book chat in this page</div>
+      </main>
+    );
+  }

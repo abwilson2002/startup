@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
+/*import Button from 'react-bootstrap/Button';
 //import {userName} from './index.jsx'
 import './Main.css';
 
@@ -41,4 +41,12 @@ export function Main(props) {
         </table>
     </main>
   );
-}
+}*/
+
+export function Main() {
+    return (
+      <main className='container-fluid bg-secondary text-center'>
+        <div>Main page to find books here</div>
+      </main>
+    );
+  }
