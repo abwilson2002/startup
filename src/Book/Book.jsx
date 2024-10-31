@@ -55,10 +55,8 @@ export function Book() {
             </table>
         </section>
         <section id="userInput">
-            <div id="userInput">
-                <input class="buttonInput" type="text" placeholder="Type your response here"/>
-                <button class="buttonChat" type="Submit">Chat</button>
-            </div>
+            <input class="buttonInput" type="text" placeholder="Type your response here"/>
+            <button class="buttonChat" type="Submit">Chat</button>
         </section>
       </main>
     );
