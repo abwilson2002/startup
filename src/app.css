@@ -20,6 +20,10 @@
   footer {
     flex: 0 30px;
   }
+
+  span {
+    text-align: left;
+  }
   
   menu {
     flex: 1;

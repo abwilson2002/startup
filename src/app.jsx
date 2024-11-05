@@ -68,7 +68,7 @@ export default function App() {
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="body bg-dark text-light">
+      <div className="body text-light">
         <header className="container-fluid">
           <nav className="navbar fixed-top navbar-dark">
             <div className="navbar-brand">Bookmarked Theories</div>
@@ -102,7 +102,7 @@ export default function App() {
     
         <footer className="bg-dark text-white-50">
           <div className="container-fluid">
-            <span className="text-reset">Owner's Github</span>
+            <span>Owner's Github</span>
             <a className='text-reset' href="https://github.com/abwilson2002/startup">Austin Wilson's Startup</a>
           </div>
         </footer>
