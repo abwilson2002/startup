@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 /*
 import { Unauthenticated } from './unauthenticated';
 import { Authenticated } from './authenticated';

@@ -1,6 +1,7 @@
 import React from "react";
-//import Bootstrap from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Book.css";
+
 /*
 
 export function About(props) {
