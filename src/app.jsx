@@ -78,11 +78,13 @@ export default function App() {
                   Login
                 </NavLink>
               </li>
-              <li>
-                <NavLink className="nav-link" to="Main">
-                  Main
-                </NavLink>
-              </li>
+              {authState === AuthState.Authenticated && (
+                <li className='nav-item'>
+                  <NavLink className='nav-link' to='Main'>
+                    Main
+                  </NavLink>
+                </li>
+              )}
               <li className='nav-item'>
                 <NavLink className="nav-link" to="About">
                   About
