@@ -12,21 +12,22 @@ body {
     padding: 0;
 }
 
-main {
+.main-container {
+    margin-top: 80px;;
     text-align: center;
-    flex-shrink: 4;
-    background: lightgrey;
+    color: black;
+    background-color: lightgrey;
     display: flex;
     flex-direction: row;
-}
-img {
-    flex: 1;
     height: 100%;
-    width: 50%;
-    margin: 0;
-    text-align: center;
+    width: 100%;
 }
-table {
+.book-image {
+    flex: 1;
+    height: 75%;
+    margin: 0;
+}
+.chat-table {
     flex: 14;
     border: thin black solid;
     font-size: 50;
@@ -51,7 +52,7 @@ td {
 #userInput {
     padding: 0;
     border: 0;
-    flex: 1;
+    flex: 0 80px;
     flex-wrap: nowrap;
     background: #717101;
     margin: 0;
