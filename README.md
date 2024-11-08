@@ -47,3 +47,6 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
 - *Application elements*: I filled the area and used a lightcoral background color for all pages.
 - *Application text*: Consistent fonts were used on all pages.
 - *Application images*: The book image on Book.html was stylized to center if the application was put in portrait mode, the whitespace around it in portait mode is intended.
+
+----------------------------------------------------------------------------------------------------------------
+# React Deliverable
