@@ -13,12 +13,12 @@ body {
 }
 
 .main-container {
-    margin-top: 80px;;
-    text-align: center;
+    margin-top: 80px;
     color: black;
     background-color: lightgrey;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     height: 100%;
     width: 100%;
 }
@@ -27,30 +27,33 @@ body {
     height: 75%;
     margin: 0;
 }
-.chat-table {
+.chat-section {
+    text-align: center;
     flex: 14;
-    border: thin black solid;
     font-size: 50;
     font-family: sans-serif;
     height: 100%;
-    max-height: min-content;
+    min-height: min-content;
     overflow-y: auto;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
 }
-.messages {
+th {
+    flex: 1;
+    float: center;
     height: min-content;
-    border: thin black solid;
-    text-align: left;
 }
-.selfReport {
-    text-align: left;
+td#selfReport {
+    flex: 2;
     max-height: min-content;
+    text-align: left;
 }
-.otherReport {
+td#otherReport {
+    flex: 2;
+    max-height: min-content;
     text-align: right;
-    max-height: min-content;
 }
 
 #userInput {

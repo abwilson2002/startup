@@ -15,7 +15,7 @@ export function Book() {
                     <td className="messages"id="selfReport">Example message from user</td>                    
                 </tr>
                 <tr>
-                    <p><td className="messages" id="otherReport">Example reply message from other users</td></p>
+                    <td className="messages" id="otherReport">Example reply message from other users</td>
                 </tr>
             </table>
         </section>
