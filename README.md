@@ -50,3 +50,5 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
 
 ----------------------------------------------------------------------------------------------------------------
 # React Deliverable
+- *Components*: Login, Main, About, Book
+       - Login: I updated login with the authenticated/unathenticated files and it now saves your username for each page.

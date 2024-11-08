@@ -58,7 +58,7 @@ export default function App() {
             }
             exact
           />
-          <Route path="/Main" element={<Main />} />
+          <Route path="/Main" element={<Main userName={userName}/>} />
           <Route path="/Book" element={<Book />} />
           <Route path="/Book2" element={<Book2 />} />
           <Route path="/About" element={<About />} />

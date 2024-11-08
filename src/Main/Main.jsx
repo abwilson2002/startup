@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Main.css';
 
 
-export function Main() {
+export function Main(props) {
+    const userName = props.userName;
     return (
       <main className='container-fluid bg-secondary text-center'>
-        <h6>User's Username</h6>
+        <h6>{userName}</h6>
         <table>
             <tr>
                 <th>Book Picture</th>
