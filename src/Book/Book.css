@@ -33,20 +33,24 @@ body {
     font-size: 50;
     font-family: sans-serif;
     height: 100%;
+    max-height: min-content;
     overflow-y: auto;
+    justify-content: center;
     padding: 0;
     margin: 0;
 }
-td {
-    border: thin grey solid;
+.messages {
     height: min-content;
-    
-}
-#selfReport {
+    border: thin black solid;
     text-align: left;
 }
-#otherReport {
+.selfReport {
+    text-align: left;
+    max-height: min-content;
+}
+.otherReport {
     text-align: right;
+    max-height: min-content;
 }
 
 #userInput {
@@ -66,7 +70,6 @@ td {
     text-align: center;
     padding: 0;
     margin: 0;
-    justify-content: left;
     flex-grow: 17;
     height: 100%;
     box-sizing: border-box;
@@ -74,7 +77,6 @@ td {
 .buttonChat {
     padding: 0;
     margin: 0;
-    justify-content: right;
     flex-grow: 1;
     height: 100%;
 }

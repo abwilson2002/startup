@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './index/login';
 import { Book } from './Book/Book';
+import { Book2 } from './Book/Book2';
 import { Main } from './Main/Main';
 import { About } from './About/About';
 import { AuthState } from './index/authState';
@@ -59,6 +60,7 @@ export default function App() {
           />
           <Route path="/Main" element={<Main />} />
           <Route path="/Book" element={<Book />} />
+          <Route path="/Book2" element={<Book2 />} />
           <Route path="/About" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
