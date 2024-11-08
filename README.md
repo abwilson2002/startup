@@ -51,4 +51,10 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
 ----------------------------------------------------------------------------------------------------------------
 # React Deliverable
 - *Components*: Login, Main, About, Book
-       - Login: I updated login with the authenticated/unathenticated files and it now saves your username for each page.
+       - Login: I updated login with the authenticated/unathenticated files and it now saves your username.
+       - Main: Main now shows only shows when authenticated and shows the saved username at the top of the page.
+       - About: Nothing really to say about About, I fixed it to look the same with react as it did with CSS.
+       - Book: Fixed the placeholder chat and picture and started a function (not saved on this repository yet) that will be implemented when clicking the chat button, but I was unable to finish it hence why it is not in the repository yet.
+              - I also added Book2.js so that in the future I can have two separate books for my startup to begin with. 
+- *Routing*: Main is now hidden behind the authentication and app.js now pulls from the .js file for each page and not the html file. I did save a couple html files because I wanted to be able to see the progress I made (the other ones that are missing did not change between html to js).
+- *Navigation*: After seeing the example Simon navigation bar, I decided to use the same concept because it looks a lot better than mine did.
