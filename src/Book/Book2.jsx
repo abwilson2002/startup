@@ -22,12 +22,17 @@ export function Book2() {
           </section>
           <section id="userInput">
               <input className="buttonInput" type="text" placeholder="Type your response here"/>
-              <button className="buttonChat" type="Submit">Chat</button>
+              <button className="buttonChat" type="Submit" onClick={Chat}>Chat</button>
           </section>
         </main>
       );
   }
 
   function Chat() {
-    [chatLog, newChatLog] = array[];
+    [chatLog, newChatLog] = array[Message, chatUserName];
+
+    /* PsuedoCode:
+        Add new message to chatLog with data {message: message, chatUserName: userName}
+        run through chatLog and show each message within the chat table
+    */
   }
