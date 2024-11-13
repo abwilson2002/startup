@@ -1,6 +1,7 @@
 import React from "react";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Book.css";
+import { Comment } from 'comment.js';
 
 export function Book2() {
     return (
@@ -25,4 +26,8 @@ export function Book2() {
           </section>
         </main>
       );
+  }
+
+  function Chat() {
+    [chatLog, newChatLog] = array[];
   }
