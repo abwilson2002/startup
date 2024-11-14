@@ -1,7 +1,6 @@
 import React from "react";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Book.css";
-import { Comment } from 'comment.js';
 
 export function Book() {
     return (

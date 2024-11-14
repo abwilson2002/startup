@@ -1,38 +1,53 @@
 import React from "react";
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Book.css";
-import { Comment } from 'comment.js';
 
-export function Book2() {
+export function Book2(props) {
+    const userName = props.userName;
+    let messageList = [];
     return (
         <main>
           <section className="main-container">
               <img className="book-image" src="/book_image.jpg" alt="Book image"/>
+              <div className="chat-table-container">
               <table className="chat-table">
-                  <tr>
-                      <th>Chat</th>
-                  </tr>
-                  <tr>
-                      <td className="messages"id="selfReport">Example message from user</td>                    
-                  </tr>
-                  <tr>
-                      <td className="messages" id="otherReport">Example reply message from other users</td>
-                  </tr>
+                <thead>
+                <tr><th>Chat</th></tr> 
+                </thead>
+                <tbody className="chat-table" id="mainChatTable">
+                </tbody>
               </table>
+              </div>
           </section>
           <section id="userInput">
-              <input className="buttonInput" type="text" placeholder="Type your response here"/>
-              <button className="buttonChat" type="Submit" onClick={Chat}>Chat</button>
+              <input id="messageInput" className="buttonInput" type="text" placeholder="Type your response here"/>
+              <button className="buttonChat" 
+                type="Submit" 
+                onClick={() => 
+                    Chat(messageList, userName)}>
+                    Chat
+              </button>
           </section>
         </main>
       );
   }
 
-  function Chat() {
-    [chatLog, newChatLog] = array[Message, chatUserName];
+  function Chat(messageList, messageUsername) {
+    const userName = messageUsername;
+    let messageInput = document.getElementById('messageInput');
+    messageList.push({ message: messageInput.value, username: messageUsername});
+    let tableBody = document.getElementById('mainChatTable');
+    
+    tableBody.innerHTML = '';
 
-    /* PsuedoCode:
-        Add new message to chatLog with data {message: message, chatUserName: userName}
-        run through chatLog and show each message within the chat table
-    */
-  }
+    messageList.forEach(item => {
+        let row = document.createElement('tr');
+        let messageCell = document.createElement('td');
+
+        messageCell.textContent = item.message;
+        messageCell.id = item.username === userName ? 'selfReport' : 'otherReport';
+
+        row.appendChild(messageCell);
+        tableBody.appendChild(row);
+    });
+}
