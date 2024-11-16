@@ -3,6 +3,7 @@ const uuid = require('uuid');
 const app = express();
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
+let users = {};
 // JSON body parsing using built-in middleware
 app.use(express.json());
 
