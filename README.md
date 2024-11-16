@@ -58,3 +58,8 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
               - I also added Book2.js so that in the future I can have two separate books for my startup to begin with. 
 - *Routing*: Main is now hidden behind the authentication and app.js now pulls from the .js file for each page and not the html file. I did save a couple html files because I wanted to be able to see the progress I made (the other ones that are missing did not change between html to js).
 - *Navigation*: After seeing the example Simon navigation bar, I decided to use the same concept because it looks a lot better than mine did.
+----------------------------------------------------------------------------------------------------------------
+# Service Deliverable
+- *Node.js/Express HTTP Service*: Created!
+- *Backend service endpoints*: I have placeholders for the login, but I have not yet implemented the endpoint for chatting (I am still working on the chat function from the React deliverable).
+- *Frontend service*: I added a fetch function to accomplish this.
