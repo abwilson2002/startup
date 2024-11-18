@@ -1,0 +1,8 @@
+.customInput {
+    height: min-content;
+}
+
+.loginMainSection {
+    display: flex;
+    flex-direction: column;
+}
