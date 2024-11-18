@@ -63,4 +63,4 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
 - *Node.js/Express HTTP Service*: Created!
 - *Backend service endpoints*: I have placeholders for the login, but I have not yet implemented the endpoint for chatting (I am still working on the chat function from the React deliverable).
 - *Frontend service*: I added a fetch function to accomplish this.
-I am going to be out of town this weekend and will not be able to update my startup to the point that this deliverable wants. When I get back I plan to get everything up to date (including figuring out why my username and password button fill the login page).
+I am still working on getting the chat table to show as I properly want it too. I am going to be out of town this weekend so I will probably not have it done by this saturday.
