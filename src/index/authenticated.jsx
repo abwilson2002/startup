@@ -20,7 +20,7 @@ export function Authenticated(props) {
   }
 
   return (
-    <div>
+    <div className='customInput'>
       <div className='playerName'>{props.userName}</div>
       <Button variant='primary' onClick={() => navigate('/Main')}>
         Main
