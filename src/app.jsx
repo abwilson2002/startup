@@ -9,6 +9,16 @@ import { AuthState } from './index/authState';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
+const { MongoClient } = require('mongodb');
+
+const userName = 'abwilson2002';
+const password = 'express';
+const hostname = 'mongodb.com';
+
+const url = `mongodb+srv://${userName}:${password}@${hostname}`;
+
+const client = new MongoClient(url);
+
 
 export default function App() {
   const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
