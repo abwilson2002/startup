@@ -64,3 +64,6 @@ Have you ever wanted to talk about a book that you really enjoy but nobody aroun
 - *Backend service endpoints*: I have placeholders for the login, but I have not yet implemented the endpoint for chatting (I am still working on the chat function from the React deliverable).
 - *Frontend service*: I added a fetch function to accomplish this.
 I am still working on getting the chat table to show as I properly want it too. I am going to be out of town this weekend so I will probably not have it done by this saturday.
+----------------------------------------------------------------------------------------------------------------
+# Login Deliverable
+- *Database*: I created a MongoDB account and cluster and was able to connect to it through my terminal. I added the files to connect to the database.
