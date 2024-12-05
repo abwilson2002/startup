@@ -2,15 +2,22 @@ const express = require('express');
 const uuid = require('uuid');
 const app = express();
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
+const DB = require('./database.js');
+const cookieParser = require('cookie-parser');
+const bcrypt = require('bcrypt');
 
 let users = {};
-// JSON body parsing using built-in middleware
+let chat = {};
+
 app.use(express.json());
 
 app.use(express.static('public'));
 
-// Router for service endpoints
-var apiRouter = express.Router();
+app.use(cookieParser());
+
+app.set('trust proxy', true);
+
+const apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
 // CreateAuth a new user
@@ -46,6 +53,12 @@ apiRouter.delete('/auth/logout', (req, res) => {
     delete user.token;
   }
   res.status(204).end();
+});
+
+//Add a chat message
+apiRouter.post('/auth/create', async (req, res) => {
+  const message = {email: req.body.email, message: req.body};
+  chat[chat.length] = message;
 });
 
 

@@ -13,7 +13,7 @@ const { MongoClient } = require('mongodb');
 
 const userName = 'abwilson2002';
 const password = 'express';
-const hostname = 'mongodb.com';
+const hostname = 'cluster0.prwxx.mongodb.net';
 
 const url = `mongodb+srv://${userName}:${password}@${hostname}`;
 
