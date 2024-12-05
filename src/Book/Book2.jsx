@@ -25,7 +25,7 @@ export function Book2(props) {
               <button className="buttonChat" 
                 type="Submit" 
                 onClick={() => 
-                    Chat(messageList, userName)}>
+                    (messageList, userName)}>
                     Chat
               </button>
           </section>
