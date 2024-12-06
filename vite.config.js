@@ -6,4 +6,9 @@ export default defineConfig({
       '/api': 'http://localhost:4000',
     },
   },
+  build: {
+    rollupOptions: {
+      external: ['@mapbox/node-pre-gyp']
+    }
+  }
 });

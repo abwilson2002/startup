@@ -4,14 +4,17 @@ const app = express();
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
 const DB = require('./database.js');
 const cookieParser = require('cookie-parser');
-const bcrypt = require('bcrypt');
+const bcryptjs = require('bcryptjs');
+
+const chatMessage = require('../src/Book/chatMessage.js');
 
 let users = {};
-let chat = {};
 
 app.use(express.json());
 
-app.use(express.static('public'));
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.use(cookieParser());
 
@@ -26,7 +29,8 @@ apiRouter.post('/auth/create', async (req, res) => {
   if (user) {
     res.status(409).send({ msg: 'Existing user' });
   } else {
-    const user = { email: req.body.email, password: req.body.password, token: uuid.v4() };
+    const hashedPassword = bcrypt.jshashSync(req.body.password, 10);
+    const user = { email: req.body.email, password: hashedPassword, token: uuid.v4() };
     users[user.email] = user;
 
     res.send({ token: user.token });
@@ -37,7 +41,7 @@ apiRouter.post('/auth/create', async (req, res) => {
 apiRouter.post('/auth/login', async (req, res) => {
   const user = users[req.body.email];
   if (user) {
-    if (req.body.password === user.password) {
+    if (bcryptjs.compareSync(req.body.password, user.password)) {
       user.token = uuid.v4();
       res.send({ token: user.token });
       return;
@@ -56,15 +60,32 @@ apiRouter.delete('/auth/logout', (req, res) => {
 });
 
 //Add a chat message
-apiRouter.post('/auth/create', async (req, res) => {
-  const message = {email: req.body.email, message: req.body};
-  chat[chat.length] = message;
+apiRouter.post('/addMessage', async (req, res) => {
+  try {
+    const { message, username } = req.body;
+
+    const newMessage = new ChatMessage({ message, username });
+    await newMessage.save();
+
+    res.status(201).send('Message added');
+  } catch (error) {
+    res.status(500).send('Error adding message');
+  }
 });
 
+//Gets the chat messages
+apiRouter.get('/messages', async (req, res) => {
+  try {
+    const messages = await chatMessage.find({});
+    res.status(200).json(messages);
+  } catch (error) {
+    res.status(500).json({ error: 'Error fetching messages' });
+  }
+});
 
 // Return the application's default page if the path is unknown
-app.use((_req, res) => {
-  res.sendFile('index.html', { root: 'public' });
+app.get('*', (_req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
 });
 
 app.listen(port, () => {

@@ -1,15 +1,17 @@
 {
-  "name": "simon-service",
+  "name": "startup",
   "version": "1.0.0",
   "description": "This demonstrates a service for a web application.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "esbuild src/index.js --bundle --outdir=dist && cpx src/index.html dist/"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
-    "uuid": "^10.0.0"
+    "uuid": "^10.0.0",
+    "mongoose": "8.8.4"
   }
 }

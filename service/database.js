@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const bcrypt = require('bcrypt');
+const bcryptjs = require('bcryptjs');
 const uuid = require('uuid');
 const config = require('./dbConfig.json');
 
@@ -31,7 +31,7 @@ function getChat() {
 
 async function createUser(email, password) {
   // Hash the password before we insert it into the database
-  const passwordHash = await bcrypt.hash(password, 10);
+  const passwordHash = await bcryptjs.hash(password, 10);
 
   const user = {
     email: email,

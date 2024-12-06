@@ -24,8 +24,7 @@ export function Book2(props) {
               <input id="messageInput" className="buttonInput" type="text" placeholder="Type your response here"/>
               <button className="buttonChat" 
                 type="Submit" 
-                onClick={() => 
-                    (messageList, userName)}>
+                onClick={() => fetchMessages()}>
                     Chat
               </button>
           </section>
@@ -51,4 +50,15 @@ export function Book2(props) {
         row.appendChild(messageCell);
         tableBody.appendChild(row);
     });
+}
+
+async function fetchMessages() {
+  try {
+    const response = await fetch('/api/messages');
+    const messages = await response.json();
+    Chat(messages, currentUserName);
+    // Update your HTML...
+  } catch (error) {
+    console.error('Error fetching messages:', error);
+  }
 }
