@@ -21,10 +21,7 @@ const client = new MongoClient(url);
 
 
 export default function App() {
-  return <h1>Hello World!</h1>;}
-  
-  
-  /*const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+  const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
   const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
   const [authState, setAuthState] = React.useState(currentAuthState);
 
@@ -87,7 +84,7 @@ export default function App() {
       </div>
     </BrowserRouter>
   );
-}*/
+}
 
 function NotFound() {
   return <main className="container-fluid bg-secondary text-center">404: Page Not Found</main>;
