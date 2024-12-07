@@ -11,11 +11,9 @@ import './app.css';
 
 const { MongoClient } = require('mongodb');
 
-const userName = 'abwilson2002';
-const password = 'express';
-const hostname = 'cluster0.prwxx.mongodb.net';
+import { MongoUserName, MongoPassword, MongoHostname} from '../service/dbConfig.json';
 
-const url = `mongodb+srv://${userName}:${password}@${hostname}`;
+const url = `mongodb+srv://${MongoUserName}:${MongoPassword}@${MongoHostname}`;
 
 const client = new MongoClient(url);
 

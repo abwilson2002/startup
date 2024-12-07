@@ -1,26 +1,24 @@
-const express = require('express');cd 
-const uuid = require('uuid');
-const app = express();
+ import { v4 } from 'uuid';
+import { express } from 'express';
+ const app = express();
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
-const DB = require('./database.js');
-const cookieParser = require('cookie-parser');
-const bcryptjs = require('bcryptjs');
+//import DB from './database.js';
+import cookieParser from 'cookie-parser';
+import { compareSync } from 'bcryptjs';
 
-const chatMessage = require('../src/Book/chatMessage.js');
+import '../src/Book/chatMessage.js';
 
 let users = {};
 
-app.use(express.json());
+app.use(json());
 
-const path = require('path');
-
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static('public'));
 
 app.use(cookieParser());
 
 app.set('trust proxy', true);
 
-const apiRouter = express.Router();
+const apiRouter = Router();
 app.use(`/api`, apiRouter);
 
 // CreateAuth a new user
@@ -30,7 +28,7 @@ apiRouter.post('/auth/create', async (req, res) => {
     res.status(409).send({ msg: 'Existing user' });
   } else {
     const hashedPassword = bcrypt.jshashSync(req.body.password, 10);
-    const user = { email: req.body.email, password: hashedPassword, token: uuid.v4() };
+    const user = { email: req.body.email, password: hashedPassword, token: v4() };
     users[user.email] = user;
 
     res.send({ token: user.token });
@@ -41,8 +39,8 @@ apiRouter.post('/auth/create', async (req, res) => {
 apiRouter.post('/auth/login', async (req, res) => {
   const user = users[req.body.email];
   if (user) {
-    if (bcryptjs.compareSync(req.body.password, user.password)) {
-      user.token = uuid.v4();
+    if (compareSync(req.body.password, user.password)) {
+      user.token = v4();
       res.send({ token: user.token });
       return;
     }
@@ -76,7 +74,7 @@ apiRouter.post('/addMessage', async (req, res) => {
 //Gets the chat messages
 apiRouter.get('/messages', async (req, res) => {
   try {
-    const messages = await chatMessage.find({});
+    const messages = await find({});
     res.status(200).json(messages);
   } catch (error) {
     res.status(500).json({ error: 'Error fetching messages' });
@@ -84,8 +82,8 @@ apiRouter.get('/messages', async (req, res) => {
 });
 
 // Return the application's default page if the path is unknown
-app.get('*', (_req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+app.use((_req, res) => {
+  res.sendFile('index.html', { root: 'public' });
 });
 
 app.listen(port, () => {

@@ -1,12 +1,12 @@
-const mongoose = require('mongoose');
+import { Schema, model } from 'mongoose';
 
 // Define the schema
-const chatMessageSchema = new mongoose.Schema({
+const chatMessageSchema = new Schema({
   message: String,
   username: String
 });
 
 // Create the model
-const ChatMessage = mongoose.model('ChatMessage', chatMessageSchema);
+const ChatMessage = model('ChatMessage', chatMessageSchema);
 
-module.exports = ChatMessage;
+export default ChatMessage;

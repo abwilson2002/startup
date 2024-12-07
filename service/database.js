@@ -3,10 +3,11 @@ const bcryptjs = require('bcryptjs');
 const uuid = require('uuid');
 const config = require('./dbConfig.json');
 
-const url = `mongodb+srv://${config.userName}:${config.password}@${config.hostname}`;
+const url = `mongodb+srv://${config.MongoUserName}:${config.MongoPassword}@${config.MongoHostname}`;
 const client = new MongoClient(url);
 const db = client.db('startup');
-const userCollection = db.collection('chat');
+const userCollection = db.collection('welcome');
+const chatCollection = db.collection('chat');
 
 // This will asynchronously test the connection and exit the process if it fails
 (async function testConnection() {
@@ -26,7 +27,7 @@ function getUserByToken(token) {
 }
 
 function getChat() {
-  return 0;
+  return chatCollection.find();
 }
 
 async function createUser(email, password) {
