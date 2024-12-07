@@ -67,3 +67,6 @@ I am still working on getting the chat table to show as I properly want it too. 
 ----------------------------------------------------------------------------------------------------------------
 # Login Deliverable
 - *Database*: I created a MongoDB account and cluster and was able to connect to it through my terminal. I added the files to connect to the database.
+-------------------------------------------------------------------------------------------------------------------
+# WebSocket Deliverable
+- *Listening*: Backend listening has been added. It's done! I am happy with where it is at!
